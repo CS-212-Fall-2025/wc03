@@ -1,0 +1,75 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wasysym}
+
+\usepackage{xcolor}
+\usepackage{wasysym}
+
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\usepackage{arabtex}
+
+\usepackage{polyglossia}
+
+\setmainlanguage{english}
+\setotherlanguage{urdu}
+\newfontfamily\urdufont[Scale=1.25]{jameel.ttf}
+
+\newcommand{\U}{\text{\texturdu{اُلٹا}}} % Use \M typeset this operator.
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\title{Weekly Challenge 03: Regular Expressions and Nondeterminism}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2025}
+
+\boxedpoints
+
+
+% \printanswers % Uncomment this line
+
+\begin{document}
+\maketitle
+
+\begin{definition}
+    Let $\Sigma = \{6,7\}$ and let $w = w_1w_2\dots w_n$ be a string such that each $w_i \in \Sigma$. Then the string $\U(w)$ is defined as: $\U(w) = w_n \dots w_2w_1$. Similarly for a language $L \subseteq \Sigma^*$, $\U(L)$ is defined as: $\U(L) = \{ \U(w) | w\in L \}$.
+\end{definition}
+
+
+
+\begin{questions}
+\question
+Let $L \subseteq \{6,7\}^*$ be a regular language, show that $\U(L)$ is also regular by:
+\begin{parts}
+    \part Constructing a finite state automata for $\U(L)$.
+    \begin{solution}
+        % Enter your solution here 
+    \end{solution}
+
+    \part Constructing regular expression for $\U(L)$.
+    \begin{solution}
+        % Enter your solution here 
+    \end{solution}
+    
+\end{parts}
+
+ 
+
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+
+
